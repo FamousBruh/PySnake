@@ -41,7 +41,6 @@ class Game:
             while(self.grid[self.fruit_x][self.fruit_y] not in invalid):
                 self.fruit_x = randint(0, 14)
                 self.fruit_y = randint(0, 14)
-                print(self.grid[self.fruit_x][self.fruit_y])
             self.grid[self.fruit_x][self.fruit_y] = "o"
         except:
             pass
@@ -50,7 +49,6 @@ class Game:
         self.size += 1
         self.score += 1
         snake_body = [self.previous] + self.body
-        print(snake_body)
         self.body = snake_body
 
     def print_grid(self):
