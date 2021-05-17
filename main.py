@@ -22,7 +22,7 @@ class Game:
         self.next = [(self.body[-1:][0][0] + self.movement[1])%25, (self.body[-1:][0][1] + self.movement[0])%25]
         for chunk in self.body:
             if(chunk == self.next):
-                return 0
+                exit()
         self.body.append(self.next)
         temp_x = self.body[0][0]
         temp_y = self.body[0][1]
@@ -92,4 +92,4 @@ def update():
     game.print_grid()
 
 game = Game()
-setInterval(update, 0.1)
+setInterval(update, 1/60)
