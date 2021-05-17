@@ -1,5 +1,5 @@
 # PySnake
 
 Known issue(s):
-  - Snake will not die, it will simply freeze if it collides with itself
-  - Framerate is 10fps, though this can be changed with the "setinterval" function
+  - FPS is dependent on your desktop and is immeasurable, but there is no stuttering due to how my "setInterval" function works.
+  - Sometimes fruit won't spawn, Idk what is going wrong, I also don't feel its too big an issue.
