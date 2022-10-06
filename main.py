@@ -52,10 +52,7 @@ class Game:
         self.body = snake_body
 
     def print_grid(self):
-        try:
-            system("CLS")
-        except:
-            system("clear")
+        system("CLS") if os.name=("Windows") else system("clear")
         self.update_grid()
         for x in range(0, 25):
             for y in range(0, 25):
